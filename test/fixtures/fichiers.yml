@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hashtag: MyString
+  user_id: 1
+  name: MyString
+  size: 1
+
+two:
+  hashtag: MyString
+  user_id: 1
+  name: MyString
+  size: 1

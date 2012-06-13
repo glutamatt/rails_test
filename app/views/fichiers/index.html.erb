@@ -1,0 +1,29 @@
+<h1>Listing fichiers</h1>
+
+<table>
+  <tr>
+    <th>Hashtag</th>
+    <th>User</th>
+    <th>Name</th>
+    <th>Size</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fichiers.each do |fichier| %>
+  <tr>
+    <td><%= fichier.hashtag %></td>
+    <td><%= fichier.user_id %></td>
+    <td><%= fichier.name %></td>
+    <td><%= fichier.size %></td>
+    <td><%= link_to 'Show', fichier %></td>
+    <td><%= link_to 'Edit', edit_fichier_path(fichier) %></td>
+    <td><%= link_to 'Destroy', fichier, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fichier', new_fichier_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hashtag:</b>
+  <%= @fichier.hashtag %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @fichier.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @fichier.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @fichier.size %>
+</p>
+
+
+<%= link_to 'Edit', edit_fichier_path(@fichier) %> |
+<%= link_to 'Back', fichiers_path %>
