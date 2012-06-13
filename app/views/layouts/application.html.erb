@@ -1,12 +1,15 @@
+<% provide(:title, 'Fatal Share') %>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FirstApp</title>
+  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<img src="http://fatalshare.com/templates/Gemini/images/logotype.png" />
 
 <%= yield %>
 
